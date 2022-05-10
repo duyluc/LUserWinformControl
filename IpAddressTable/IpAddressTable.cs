@@ -10,20 +10,30 @@ using System.Windows.Forms;
 
 namespace IpAddressTable
 {
-    public partial class IpAddressTable: UserControl
+    public partial class IpAddressTable : UserControl
     {
+        public DataBaseProvider DbProvider { get; set; }
+
         public event EventHandler TableChanged;
-        public void OnTableChanged() 
+        public void OnTableChanged()
         {
             List<string> iplist = new List<string>();
             foreach (DataGridViewRow row in this.Datagridview.Rows)
             {
-                if(row.Cells[0].Value != null)
+                if (row.Cells[0].Value != null)
                 {
                     iplist.Add(row.Cells[0].Value.ToString());
                 }
             }
             TableChanged?.Invoke(iplist, EventArgs.Empty);
+            try
+            {
+                this.DbProvider.WriteTable(iplist);
+            }
+            catch (Exception t)
+            {
+                throw t;
+            }
         }
 
         public IpAddressTable()
@@ -32,6 +42,31 @@ namespace IpAddressTable
             btnAdd.FlatAppearance.BorderSize = 0;
             btnDelete.FlatAppearance.BorderSize = 0;
             this.Datagridview.CellValueChanged += Datagridview_CellValueChanged;
+
+        }
+
+        public void Initial(string dbname)
+        {
+            this.DbProvider = new DataBaseProvider($"{dbname}");
+            ClientIp[] _ipList;
+            try
+            {
+                _ipList = this.DbProvider.GetTable();
+                foreach(ClientIp i in _ipList)
+                {
+                    DataGridViewRow newrow = new DataGridViewRow();
+                    DataGridViewTextBoxCell ipaddresscell = new DataGridViewTextBoxCell();
+                    ipaddresscell.Value = i.IP;
+                    DataGridViewCheckBoxCell statuscell = new DataGridViewCheckBoxCell();
+                    statuscell.Value = false;
+                    newrow.Cells.AddRange(new DataGridViewCell[] { ipaddresscell, statuscell });
+                    this.Datagridview.Rows.Add(newrow);
+                }
+            }
+            catch (Exception t)
+            {
+                throw t;
+            }
         }
 
         private void Datagridview_CellValueChanged(object sender, DataGridViewCellEventArgs e)

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LMessageBox.Ver1", "LMessag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{2D8B8F1A-570D-4CE1-B57B-A3EF468B58FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_IpAddressTable.Ver1", "Test_IpAddressTable.Ver1\Test_IpAddressTable.Ver1.csproj", "{932EC64F-4CD7-45E2-8B94-4BCC2D58B89B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2D8B8F1A-570D-4CE1-B57B-A3EF468B58FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D8B8F1A-570D-4CE1-B57B-A3EF468B58FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D8B8F1A-570D-4CE1-B57B-A3EF468B58FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{932EC64F-4CD7-45E2-8B94-4BCC2D58B89B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932EC64F-4CD7-45E2-8B94-4BCC2D58B89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932EC64F-4CD7-45E2-8B94-4BCC2D58B89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932EC64F-4CD7-45E2-8B94-4BCC2D58B89B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{348A2C31-9445-43C3-9AE0-6BCB4F2C9996} = {EA1E5501-6137-4441-932E-0EA0DFD3EDE0}
 		{EBCD32D2-DDEB-48EC-86EA-C72B4376DBBC} = {96085193-A0A3-4B45-8C90-E55EB353DF71}
 		{2D8B8F1A-570D-4CE1-B57B-A3EF468B58FC} = {96085193-A0A3-4B45-8C90-E55EB353DF71}
+		{932EC64F-4CD7-45E2-8B94-4BCC2D58B89B} = {EA1E5501-6137-4441-932E-0EA0DFD3EDE0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0ECB88D2-6C06-46B4-B3B6-AA63A8A367ED}
