@@ -62,6 +62,7 @@ namespace IpAddressTable
                     newrow.Cells.AddRange(new DataGridViewCell[] { ipaddresscell, statuscell });
                     this.Datagridview.Rows.Add(newrow);
                 }
+                OnTableChanged();
             }
             catch (Exception t)
             {
