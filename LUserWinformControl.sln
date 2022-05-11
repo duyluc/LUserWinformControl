@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InOutTerminalTable", "InOut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InOutTerminalTable.Ver1", "InOutTerminalTable.Ver1\InOutTerminalTable.Ver1.csproj", "{02CE5045-F9F1-418B-BC48-5CF845D5B964}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_InOutTerminalTable", "Test_InOutTerminalTable\Test_InOutTerminalTable.csproj", "{48933CF5-7D4C-49E0-9284-A96BB9B9FCD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{02CE5045-F9F1-418B-BC48-5CF845D5B964}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02CE5045-F9F1-418B-BC48-5CF845D5B964}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02CE5045-F9F1-418B-BC48-5CF845D5B964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48933CF5-7D4C-49E0-9284-A96BB9B9FCD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48933CF5-7D4C-49E0-9284-A96BB9B9FCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48933CF5-7D4C-49E0-9284-A96BB9B9FCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48933CF5-7D4C-49E0-9284-A96BB9B9FCD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{EBCD32D2-DDEB-48EC-86EA-C72B4376DBBC} = {96085193-A0A3-4B45-8C90-E55EB353DF71}
 		{932EC64F-4CD7-45E2-8B94-4BCC2D58B89B} = {EA1E5501-6137-4441-932E-0EA0DFD3EDE0}
 		{02CE5045-F9F1-418B-BC48-5CF845D5B964} = {796FA3E3-FE78-42FE-8CC7-B2CE5542A014}
+		{48933CF5-7D4C-49E0-9284-A96BB9B9FCD6} = {796FA3E3-FE78-42FE-8CC7-B2CE5542A014}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0ECB88D2-6C06-46B4-B3B6-AA63A8A367ED}

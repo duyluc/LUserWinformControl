@@ -21,10 +21,7 @@ namespace InOutTerminalTable.Ver1
         public void SetValue2View(Dictionary<string,Terminal> inOutTerminal)
         {
             if (inOutTerminal == null) throw new ArgumentNullException();
-            this.Datagridview.Invoke(new Action(() =>
-            {
-                this.Datagridview.Rows.Clear();
-            }));
+            this.Datagridview.Rows.Clear();
             foreach (KeyValuePair<string, Terminal> Ter in inOutTerminal)
             {
                 Terminal terminal = Ter.Value;
@@ -44,10 +41,7 @@ namespace InOutTerminalTable.Ver1
                     valuecell.Value = Convert.ChangeType(terminal.Value,terminal.Type);
                 }
                 newrow.Cells.AddRange(new DataGridViewCell[3] { namecell, typecell, valuecell });
-                this.Datagridview.Invoke(new Action(() =>
-                {
-                    this.Datagridview.Rows.Add(newrow);
-                }));
+                this.Datagridview.Rows.Add(newrow);
             }
             
         }
