@@ -63,6 +63,18 @@ namespace IpAddressTable
                 throw t;
             }
         }
+        public List<string> GetIpList()
+        {
+            List<string> iplist = new List<string>();
+            foreach (DataGridViewRow row in this.Datagridview.Rows)
+            {
+                if (row.Cells[0].Value != null)
+                {
+                    iplist.Add(row.Cells[0].Value.ToString());
+                }
+            }
+            return iplist;
+        }
 
         private void Datagridview_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
@@ -90,5 +102,6 @@ namespace IpAddressTable
             this.Datagridview.Rows.Remove(selectedrow);
             OnTableChanged();
         }
+        
     }
 }

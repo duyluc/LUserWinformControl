@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Datagridview = new System.Windows.Forms.DataGridView();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,6 +39,14 @@
             // Datagridview
             // 
             this.Datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Name,
@@ -45,41 +54,43 @@
             this.Value});
             this.Datagridview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Datagridview.Location = new System.Drawing.Point(0, 0);
+            this.Datagridview.Margin = new System.Windows.Forms.Padding(2);
             this.Datagridview.Name = "Datagridview";
-            this.Datagridview.RowHeadersWidth = 62;
+            this.Datagridview.RowHeadersWidth = 30;
             this.Datagridview.RowTemplate.Height = 24;
-            this.Datagridview.Size = new System.Drawing.Size(487, 552);
+            this.Datagridview.Size = new System.Drawing.Size(346, 448);
             this.Datagridview.TabIndex = 0;
             // 
             // Name
             // 
-            this.Name.FillWeight = 85.22727F;
+            this.Name.FillWeight = 190.3554F;
             this.Name.HeaderText = "Name";
-            this.Name.MinimumWidth = 150;
+            this.Name.MinimumWidth = 100;
             this.Name.Name = "Name";
             this.Name.ReadOnly = true;
             // 
             // Type
             // 
-            this.Type.FillWeight = 107.3864F;
+            this.Type.FillWeight = 54.82234F;
             this.Type.HeaderText = "Type";
-            this.Type.MinimumWidth = 50;
+            this.Type.MinimumWidth = 80;
             this.Type.Name = "Type";
             this.Type.ReadOnly = true;
             // 
             // Value
             // 
-            this.Value.FillWeight = 107.3864F;
+            this.Value.FillWeight = 54.82234F;
             this.Value.HeaderText = "Value";
-            this.Value.MinimumWidth = 8;
+            this.Value.MinimumWidth = 80;
             this.Value.Name = "Value";
             // 
             // InOutTerminalTable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Datagridview);
-            this.Size = new System.Drawing.Size(487, 552);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Size = new System.Drawing.Size(346, 448);
             ((System.ComponentModel.ISupportInitialize)(this.Datagridview)).EndInit();
             this.ResumeLayout(false);
 
